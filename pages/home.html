@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shortcut</title>
+    <link rel="stylesheet" href="./home.css" />
+    <script src="../js/private.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <!-- nav bar-->
+
+        <nav class="nav">
+
+
+            <ul class="nav-list">
+                
+                <li class="nav-item"><a href="./welcome.html" class="nav-link">Log In</a></li>
+                <li class="nav-item"><a href="./welcome.html" class="nav-link">Sign Up</a></li>
+                <li class="nav-item"><a href="about:blank#" target="_blank" class="nav-link" id="logout_lnk">logout</a></li>
+                
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- container-->
+    
+    <div class="container">
+
+        <!-- main content -->
+
+        <h1>Create a shortcut for your URL</h1>
+
+        <form method="post" id="shorten-form">
+            
+            <input type="url" name="url" placeholder="Enter your URL" required>
+
+            <button class="btn" type="submit">Shorten</button>
+
+        </form>
+    
+        <div id="shorten-result"></div>
+
+        
+    </div>
+
+    <div class="answer">
+
+        <h1>Your shortened URL</h1>
+
+        <div id="shorten-list">  </div>
+        
+
+    </div>
+    
+    <script src="../js/createShortUrl.js"></script>
+    <script src="../js/getShortUrls.js"></script>
+    <script src="../js/deleteShortUrl.js"></script>
+    <script src="../js/updateShortUrl.js"></script>
+    
+</body>
+
+</html>
